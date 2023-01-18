@@ -1,18 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {},
   },
-  plugins: [require('daisyui')],
+  plugins: [require("daisyui")],
 
   // daisyUI config (optional)
   daisyui: {
     styled: true,
-    themes: ['cupcake', 'pastel', 'dark'],
+    themes: ["cupcake"],
     // themes: [
     //   'light',
     //   'dark',
@@ -48,7 +48,7 @@ module.exports = {
     utils: true,
     logs: true,
     rtl: false,
-    prefix: '',
-    darkTheme: 'dark',
+    prefix: "",
+    darkTheme: "dark",
   },
 };

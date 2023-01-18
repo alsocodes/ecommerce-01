@@ -1,9 +1,8 @@
-import Head from 'next/head';
-import React from 'react';
-import Header from '../Header';
-import Hero from '../Hero';
-import TopNav from '../TopNav';
-import Waves from '../Waves';
+import Head from "next/head";
+import React from "react";
+import Header from "../Header";
+import Hero from "../Hero";
+import TopNav from "../TopNav";
 
 type Props = {
   data: any;
@@ -14,19 +13,18 @@ const FrontLayout = ({ data, children }: Props) => {
   return (
     <>
       <Head>
-        <title>{title || 'Site Title'}</title>
+        <title>{title || "Site Title"}</title>
         <meta
-          name='description'
-          content={description || 'This is site description'}
+          name="description"
+          content={description || "This is site description"}
         />
-        <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <link rel='icon' href='/favicon.ico' />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
         <TopNav />
         <Header />
         <Hero />
-        <Waves />
         {children}
       </main>
     </>
